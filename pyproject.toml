@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tokenizer"
+version = "0.1.0"
+description = "Language tokenizer by Huvinesh Rajendran. For research and development."
+authors = ["Huvinesh Rajendran <huvineshrajendran@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyterlab = "^4.1.4"
+regex = "^2023.12.25"
+jupyterlab-vim = "^4.1.3"
+tiktoken = "^0.6.0"
+black = {extras = ["jupyter"], version = "^24.2.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
