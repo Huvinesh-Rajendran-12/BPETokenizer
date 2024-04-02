@@ -3,6 +3,7 @@
 This is a bpetokenizer inspired from the GPT4 model which merges the most popular tokens to create a new token to add to the vocabulary.
 
 # Usage
+```bash
 usage: bpetokenizer.jl [-t TRAIN] [-i INPUT] [-e ENCODE] [-d DECODE]
                        [-v VOCAB-SIZE] [-h]
 optional arguments:
@@ -16,3 +17,4 @@ optional arguments:
   -v, --vocab-size VOCAB-SIZE
                         Vocabulary size (type: Int64, default: 300)
   -h, --help            show this help message and exit
+```
