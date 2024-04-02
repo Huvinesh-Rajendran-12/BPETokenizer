@@ -6,20 +6,22 @@ function parse_commandline()
         "--train", "-t"
         help="Boolean value to turn on or off the training"
         arg_type=Bool
-        default=true
+        default=false
 
         "--input", "-i"
-        help="Path of the input file. Only set the path if --train is true"
+        help="Path of the input file. Set the input file when training the model, encoding, and decoding"
         arg_type=String
         default=""
 
         "--encode", "-e"
         help="Encode text"
-        arg_type=String
+        arg_type=Bool
+        default=false
 
         "--decode", "-d"
         help="Decode a set of unicode tokens into strings"
-        arg_type=Vector{byteVec}
+        arg_type=Bool
+        default=false
 
         "--vocab-size", "-v"
         help="Vocabulary size"
